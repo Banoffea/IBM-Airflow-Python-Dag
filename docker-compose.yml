@@ -1,0 +1,13 @@
+
+services:
+  airflow:
+    build: .
+    image: airflow_dag_python
+
+    volumes:
+      - ./airflow:/opt/airflow
+
+    ports:
+      - "8000:8080"
+
+    command: airflow standalone
