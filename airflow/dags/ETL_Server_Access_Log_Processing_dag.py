@@ -42,6 +42,13 @@ def load():
         for line in infile:
             outfile.write(line)
 
+# def load():
+#     with open(transformed_file, 'r') as infile:
+#         data = infile.read()
+    
+#     with open(output_file, 'w') as outfile:
+#         outfile.write(data)
+
 
 default_args = {
     'owner': 'Your name',
